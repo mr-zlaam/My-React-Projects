@@ -1,0 +1,45 @@
+/*********Color Variables***************/
+:root {
+          --home_bg: #071952;
+          --home_color: #c8ff00;
+          --primaryColor: #ffff;
+          --secondaryColor: #000;
+}
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+*::selection {
+          background: #c8ff00;
+          color: blue;
+}
+
+
+
+
+body {
+          background: url("https://w0.peakpx.com/wallpaper/700/235/HD-wallpaper-askeladd-thorfinn-vinland-saga.jpg");
+
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          color: var(--home_color);
+          position: relative;
+          height: 100%;
+}
+
+body::before {
+          content: "";
+          background: #28282bc3;
+          opacity: 0.5;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: -1;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+}
